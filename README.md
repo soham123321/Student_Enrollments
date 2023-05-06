@@ -1,36 +1,3 @@
-# IST769 Spring 2023 Final Exam
-
-## Front Matter 
-
-### Important Disclaimer
-
-**This is an open book EXAM. The intent is to measure your knowledge of the course material. You are expected to work on this on your own. The exam period begins when this document is released.**
-
-**Allowed During the Exam Period:**
-
-- All Resources from this class.
-- Content from the internet (pages, videos, posted stack overflow, questions, etc., generally anything you can find with a web search).
-- Whatever we discuss in class on Monday.
-- Asking the instructor for clarification on the Teams Channel ONLY (so everyone sees it).
-
-**NOT Allowed During the Exam Period:**
-
-- Bouncing ideas off your classmates, or collaborating on approaches. 
-- Asking another human for clarification, advice, interpretation, or suggestions whether in person or online, whether synchronously or asynchronously.
-- Solutions that use code we didn't learn in the class. Stick to Pyspark SQL, Pyspark Dataframes API, and SQL in Drill. No spark RDD or regular Python.
-- Use of test aid websites like Chegg, Coursehero, etc. These won't be helpful, and they are evil anyways.
-
-### Getting Started
-
-Is highly recommended that you use vLab to complete this exam. If you don't you're on your own regarding getting this working on your own computer.
-
-1. Check if there are containers running: `PS> docker ps`
-2. Stop any running containers: `PS> docker ps -q | % { docker stop $_ }`
-2. Clone this repository: `git clone https://github.com/mafudge/ist769sp23final`
-3. Change into the repository directory: `cd ist769sp23final`
-4. Build the dataloader container: `docker-compose build`
-4. Bring up the docker environment: `docker-compose up -d`
-5. The data loader service `dataloader` will import data into the databases to begin. To check on its status: `docker-compose logs dataloader`
 
 ## The iSchool Data Scientist
 
@@ -41,9 +8,6 @@ The iSchool has hired you as a data scientist to help them analyze the data from
 
 I suggest getting familiar with the data prior to attempting to solve the problems. Do this by querying the data using mongodb, Spark or Drill to get a sense of the layout and properties of the data. This is considered part of the exam and necessary to complete the challenges. If you would like to see the data structure in a file, you can look in the `dataloader/app/data` folder.
 
-## Exam
-
-**DO NOT USE CHAT-GPT OR OTHER GENERATIVE AI'S, PLEASE JUST STICK TO THE CLASS LESSONS**
 
 ### Instructions
 
@@ -56,19 +20,7 @@ For the highest possible marks, for each question, include the following in the 
 2. A CLEAR screenshot of your code with your netid in the screenshot. (only screenshot the region, not the entire window!)
 3. A CLEAR screenshot of the output of your code with your netid in the screenshot. (only screenshot the region, not the entire window!)
 4. If you know your answer is NOT correct, explain what you tried/omitted/did not get correct, by adding comments to your code/commenting out code that does not run. This should appear in your text and screenshot.
-
-### Advice for the Best Grade
-
-- Review how to connect to `mongodb`, `minio`, `cassandra`, '`elasticsearch`, `kibana` and `neo4j` from `Spark`. Figure this out BEFORE you start the exam. 
-- When you answer the questions, PySpark and use the DataFrames API. You should NOT need to use RDD or fall back to PoP, unless explicitly asked to do so. While you CAN solve these problems using both of those approaches, that is not what was taught in class. 
-- There are many ways to solve these problems. If you get stuck, try a different approach. I expect everyone will have slightly different solutions.
-- Your output needs to show the code solves the problem clearly and trivially. For example, if the question asks for customers who have not placed an order the query output should show that.
-- Use the `Exam.ipynb` file in the `work` folder to write your code! And Clearly label your code with comments and markdown cells. You will turn in this file along with your exam submission document.
-- If you cannot figure out the answer to the question, I suggest writing simpler code and using that as your answer. This way you can complete the next question in the exam. It is better to have running code that is incorrect than code that will not run.
-- Questions you think are correct, but are not will be graded more harshly than questions which you know are incorrect.
-- Every answer should be able to be executed multiple times without error, and with the same results.  If you load data, make sure the same data loads each time without adding extra records.
-
-### Exam Questions
+### Questions
 
 Unless you are explicitly instructed otherwise, answer each of the following using PySpark / Spark SQL. For any queries you write make sure to include a `printSchema()` and a sample of the output which  demonstrates the code is correct clearly and trivially.
 
