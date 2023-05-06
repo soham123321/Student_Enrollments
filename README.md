@@ -44,11 +44,3 @@ Unless you are explicitly instructed otherwise, answer each of the following usi
 18. Create a `sections` index pattern in `kibana` from the `sections` index in `elasticsearch`. Add a dervied column to the `sections` index pattern to calculate the ratio of `enrollment/capacity`.  Demonstrate it works by querying the `IST659` `M001` sections.
 19. Build a `kibana` student dashboard, from the `enrollments` index pattern. When a student is selected by name, show their program and gpa on a card(s). Provide a list of courses taken and include course name and letter grade. Create a pie chart that demonstrates how many credits the student has completed in the program.
 20. Build a `kibana` course dashboard, from the `sections` index pattern. Allow for the selection of the `academic year` then display three relevant visualization of your choosing. For example, this could be: a summary of courses for that term, bar charts of enrollment to capacity for each course, counts of courses required in program vs electives, etc...
-
-
-### Turning it in
-
-- Complete the `E2-Submission-Form.docx`.
-- Include your `Exam.ipynb` with completed questions. 
-- Make sure your name and email are in BOTH files where you are prompted to add them.
-- turn both files into blackboard prior to the deadline. 
